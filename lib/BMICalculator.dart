@@ -28,10 +28,14 @@ class BMIState extends State<BMICalculator> {
           _result = 'Anda termasuk dalam kategori kurus';
         } else if (_calculation >= 18.5 && _calculation <= 24.9) {
           _result = 'Anda termasuk dalam kategori ideal';
-        } else if (_calculation >= 25.0 && _calculation <= 24.9) {
+        } else if (_calculation >= 25.0 && _calculation <= 29.9) {
           _result = 'Anda termasuk dalam kategori gemuk';
+        } else if (_calculation >= 30.0 && _calculation <= 34.9) {
+          _result = 'Anda termasuk dalam kategori obesitas kelas 1';
+        } else if (_calculation >= 35.0 && _calculation <= 39.9) {
+          _result = 'Anda termasuk dalam kategori obesitas kelas 2';
         } else {
-          _result = 'Anda termasuk dalam kategori obesitas';
+          _result = 'Anda termasuk dalam kategori obesitas kelas 3';
         }
       });
     }
